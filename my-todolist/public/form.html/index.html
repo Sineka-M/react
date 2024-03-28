@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            display: block;
+        }
+        .input-field {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .submit-button,
+        .custom-button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-button:read-write,
+        .custom-button:hover {
+            background-color: #b30000;
+        }
+        .checkbox,
+        .radio {
+            margin-right: 5px;
+        }
+        .dropdown {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Elements</h1>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="input-field" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="input-field" placeholder="Enter your email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" class="input-field" placeholder="Enter your message"></textarea>
+
+            <label>Checkbox:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" class="checkbox">
+            <label for="checkbox">Check me out</label>
+
+            <br><br>
+            <label>Radio buttons:</label><br>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">0 - 30</label><br>
+            <input type="radio" id="age2" name="age" value="60">
+            <label for="age2">31 - 60</label><br>  
+            <input type="radio" id="age3" name="age" value="100">
+            <label for="age3">61 - 100</label><br><br>
+
+            <label for="dropdown">Dropdown:</label>
+            <select id="dropdown" name="dropdown" class="dropdown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+
+            <br><br>
+            <input type="submit" value="Submit" class="submit-button">
+            <button type="button" class="custom-button">Button</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.App {
+  
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  min-height: 440px;
+  background-size:cover; 
+  background-position: center; 
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #252323, hsl(120, 88%, 47%)); /* red to green linear gradient */
+
+}
+
+
+.city-search {
+  
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  border: 2px solid #e62323;
+  outline: none;
+  border-radius: 20px;
+  font-size: 26px;
+  background-color: #edf4f6;
+  padding: 12px 40px 12px 40px;
+  transition: width 0.4s ease-in-out;
+  color: #090909;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.weather-icon img {
+  
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px #08b1f9ef;
+}
